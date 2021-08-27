@@ -103,72 +103,12 @@ h2 {
   margin-top: 20px;
 }
 
-/* Media Query: Large Smartphone (Vertical) */
-@media screen and (max-width: 600px) {
-  .game-container {
-    width: 95vw;
-    height: 580px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  .player-container {
-    margin: 50px 0 25px 25px;
-  }
-
-  .fas {
-    margin-right: 20px;
-  }
-
-  .reset-icon {
-    margin-top: 25px;
-    margin-left: 25px;
-  }
-}
-
-/* Media Query: iPhone (Vertical) */
-@media screen and (max-width: 500px) {
-  .game-container {
-    height: 450px;
-  }
-
-  h1 {
-    font-size: 14px;
-  }
-
-  .player-container {
-    margin: 43px 0 25px 20px;
-  }
-
-  .fas {
-    font-size: 25px;
-  }
-
-  .reset-icon {
-    margin-top: 15px;
-  }
-
-  .result-container {
-    margin: 0 20px;
-  }
-
-  .result-text {
-    font-size: 15px;
-  }
-
-  h2 {
-    font-size: 15px;
-  }
-}
-
 #myImg {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
   display: flex;
-  width: calc(100% - 30px);
+  margin-top: 10px;
 }
 
 #myImg:hover {
@@ -254,13 +194,6 @@ h2 {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
-}
-
 button {
   background-color: #4caf50; /* Green */
   border: none;
@@ -271,4 +204,41 @@ button {
   display: inline-block;
   font-size: 16px;
   max-width: 150px;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 600px) {
+  .game-container {
+    width: 95vw;
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 4.5vw;
+  }
+
+  .player-container {
+    margin: 43px 0 25px 20px;
+  }
+
+  .fas {
+    font-size: 8vw;
+    margin-right: 20px;
+  }
+
+  .reset-icon {
+    margin-top: 15px;
+  }
+
+  .result-container {
+    margin: 0 20px;
+  }
+
+  .result-text {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
 }
