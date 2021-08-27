@@ -40,12 +40,27 @@
             </div>
 
             <!-- Reset -->
-            <i class="fas fa-sync-alt reset-icon" title="Reset" onclick="resetGame()"></i>
+            <div class="buttons-container">
+                <i class="fas fa-sync-alt reset-icon" title="Reset" onclick="resetGame()"></i>
+                <i id="myImg" class="fas fa-book-open"></i>
+            </div>
+
 
             <!-- Results -->
             <div class="result-container">
                 <h3 class="result-text" id="result-text"></h3>
+                <!-- Reset -->
             </div>
+
+
+        </div>
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
         </div>
 
         <!-- Script -->
