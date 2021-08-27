@@ -1,3 +1,4 @@
+import "./confetti.js";
 const resetButton = document.querySelector("#reset-button");
 const playerScoreElement = document.querySelector("#player-score");
 const playerChoiceElement = document.querySelector("#player-choice");
@@ -157,3 +158,8 @@ function displayComputerChoice() {
       break;
   }
 }
+
+// Export these functions to the window object so they can be accessed in the HTML file
+// This needs to be done because the script file is imported as a module on the HTMl file
+window.select = select;
+window.resetGame = resetGame;
