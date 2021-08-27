@@ -1,3 +1,4 @@
+const resetButton = document.querySelector("#reset-button");
 const playerScoreElement = document.querySelector("#player-score");
 const playerChoiceElement = document.querySelector("#player-choice");
 const computerScoreElement = document.querySelector("#computer-score");
@@ -29,6 +30,20 @@ const choices = {
 let computerChoice = "";
 let playerScore = 0;
 let computerScore = 0;
+
+function resetGame() {
+  playerScore = 0;
+  playerScoreElement.textContent = playerScore;
+  playerChoiceElement.textContent = "";
+
+  computerScore = 0;
+  computerScoreElement.textContent = computerScore;
+  computerChoiceElement.textContent = "";
+
+  resultText.textContent = "";
+
+  resetSelectedIcons();
+}
 
 function resetSelectedIcons() {
   allGameIcons.forEach((icon) => {
