@@ -93,8 +93,6 @@ h2 {
 
 .last-row-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .result-text {
