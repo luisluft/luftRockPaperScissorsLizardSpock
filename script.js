@@ -27,6 +27,8 @@ const choices = {
 };
 
 let computerChoice = "";
+let playerScore = 0;
+let computerScore = 0;
 
 function resetSelectedIcons() {
   allGameIcons.forEach((icon) => {
@@ -43,15 +45,43 @@ function computerRandomChoice() {
   else if (computerChoiceNumber <= 1) computerChoice = "spock";
 }
 
+function updateScore(playerChoice) {
+  let turnResult = "";
+
+  // It's a tie
+  if (playerChoice === computerChoice) {
+    resultText.textContent = "It's a tie.";
+  }
+  // Not a tie
+  if (playerChoice !== computerChoice) {
+    const choice = choices[playerChoice];
+
+    // Player wins
+    if (choice.defeats.indexOf(computerChoice) > -1) {
+      resultText.textContent = "You won!";
+      playerScore++;
+      playerScoreElement.textContent = playerScore;
+    }
+
+    // Computer wins
+    if (choice.defeats.indexOf(computerChoice) === -1) {
+      resultText.textContent = "You lost!";
+      computerScore++;
+      computerScoreElement.textContent = computerScore;
+    }
+  }
+}
+
 // AKA checkResult()
-function processTurn() {
+function processTurn(playerChoice) {
   resetSelectedIcons();
   computerRandomChoice();
   displayComputerChoice();
+  updateScore(playerChoice);
 }
 
 function select(playerChoice) {
-  processTurn();
+  processTurn(playerChoice);
 
   switch (playerChoice) {
     // add selected styling & playerChoice
