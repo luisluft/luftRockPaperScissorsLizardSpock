@@ -1,4 +1,5 @@
 import "./confetti.js";
+import "./gameRules.js";
 const resetButton = document.querySelector("#reset-button");
 const playerScoreElement = document.querySelector("#player-score");
 const playerChoiceElement = document.querySelector("#player-choice");
@@ -158,26 +159,6 @@ function displayComputerChoice() {
       break;
   }
 }
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function () {
-  modal.style.display = "block";
-  modalImg.src = "./game-rules.png";
-};
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
-};
 
 // Export these functions to the window object so they can be accessed in the HTML file
 // This needs to be done because the script file is imported as a module on the HTMl file
