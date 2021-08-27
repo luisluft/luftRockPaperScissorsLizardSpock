@@ -76,6 +76,11 @@ function updateScore(playerChoice) {
       resultText.textContent = "You won!";
       playerScore++;
       playerScoreElement.textContent = playerScore;
+      window.confetti({
+        particleCount: 100,
+        startVelocity: 30,
+        spread: 360,
+      });
     }
 
     // Computer wins
