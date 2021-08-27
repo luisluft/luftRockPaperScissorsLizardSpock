@@ -79,11 +79,17 @@ h2 {
 
 .result-container {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 
 .buttons-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.last-row-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,7 +133,7 @@ h2 {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 4.5vw;
   }
 
   .player-container {
@@ -135,7 +141,7 @@ h2 {
   }
 
   .fas {
-    font-size: 43px;
+    font-size: 30px;
   }
 
   .reset-icon {
@@ -144,6 +150,14 @@ h2 {
 
   .result-container {
     margin: 0 20px;
+  }
+
+  .result-text {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 5vw;
   }
 }
 
