@@ -208,7 +208,7 @@ button {
 @media screen and (max-width: 600px) {
   .game-container {
     width: 95vw;
-    height: 400px;
+    height: 500px;
   }
 
   h1 {
