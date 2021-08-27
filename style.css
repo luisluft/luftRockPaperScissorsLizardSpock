@@ -135,7 +135,7 @@ h2 {
   }
 
   h1 {
-    font-size: 4.5vw;
+    font-size: 3.5vw;
   }
 
   .player-container {
@@ -143,7 +143,7 @@ h2 {
   }
 
   .fas {
-    font-size: 30px;
+    font-size: 7vw;
   }
 
   .reset-icon {
@@ -155,11 +155,11 @@ h2 {
   }
 
   .result-text {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   h2 {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 }
 
